@@ -113,7 +113,8 @@ def repo_config
                 :bootstrapurl => new_resource.bootstrapurl,
                 :includepkgs => new_resource.includepkgs,
                 :exclude => new_resource.exclude,
-                :priority => new_resource.priority
+                :priority => new_resource.priority,
+                :extra_options => new_resource.extra_options
               })
     if new_resource.make_cache
       notifies :run, "execute[yum-makecache]", :immediately

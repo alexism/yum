@@ -33,6 +33,7 @@ attribute :make_cache, :kind_of => [TrueClass, FalseClass], :default => true
 attribute :includepkgs, :kind_of => String, :default => nil
 attribute :exclude, :kind_of => String, :default => nil
 attribute :priority, :kind_of => [Integer, String], :default => nil
+attribute :extra_options, :kind_of => Hash, :default => {}
 
 def initialize(*args)
   super

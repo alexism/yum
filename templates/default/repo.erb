@@ -33,3 +33,7 @@ exclude=<%= @exclude %>
 <% if @priority %>
 priority=<%= @priority %>
 <% end %>
+
+<% @extra_options.each do |k, v| %>
+<%= "#{k}=#{v}" %>
+<% end %>
